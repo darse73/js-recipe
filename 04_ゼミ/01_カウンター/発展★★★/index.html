@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="flame">
+
+        <div class="display-flame">
+            <input type="text" class="display" id="display-top" value="0" disabled />
+            <input type="text" class="display" id="display-bottom" value="0" disabled />
+        </div>
+
+        <div class="button">
+            <input type="button" value="7" onclick="dis(this.value)" />
+            <input type="button" value="8" onclick="dis(this.value)" />
+            <input type="button" value="9" onclick="dis(this.value)" />
+            <input type="button" value="DEL" onclick="del()" />
+            <input type="button" value="AC" onclick="ac()" />
+
+            <input type="button" value="4" onclick="dis(this.value)" />
+            <input type="button" value="5" onclick="dis(this.value)" />
+            <input type="button" value="6" onclick="dis(this.value)" />
+            <input type="button" value="×" onclick="dis(this.value)" />
+            <input type="button" value="÷" onclick="dis(this.value)" />
+
+            <input type="button" value="1" onclick="dis(this.value)" />
+            <input type="button" value="2" onclick="dis(this.value)" />
+            <input type="button" value="3" onclick="dis(this.value)" />
+            <input type="button" value="+" onclick="dis(this.value)" />
+            <input type="button" value="-" onclick="dis(this.value)" />
+
+            <input type="button" value="0" onclick="dis(this.value)" />
+            <input type="button" value="." onclick="dis(this.value)" />
+            <input type="button" value="(" onclick="dis(this.value)" />
+            <input type="button" value=")" onclick="dis(this.value)" />
+            <input type="button" value="=" onclick="calc()" />
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

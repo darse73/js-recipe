@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    background:radial-gradient(rgb(50, 53, 252),rgb(255, 255, 255));
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.flame {
+    position: absolute;
+    border:solid;
+    background-color: rgba(122, 144, 240);
+    margin: 2% 30%;  /*ここ疑問点 どうして5%だめ？*/
+    padding: 2% 3%;
+    height: 90%;
+    width: 40%;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+.display-flame {
+    border: 0.2rem solid;
+    padding: 1% ;
+    margin-bottom: 7%;
+    background-color: rgb(148, 141, 243);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+}
+
+.display {
+    border: 0.2rem solid black;
+    background-color: rgb(165, 218, 248);
+    height: 0%;
+    margin: 1%;
+    font-size: 250%;
+    color: black;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(5,19.2%);
+    column-gap: 1%;
+    grid-template-rows: repeat(4,55%);/*なんで縮まない？*/
+    row-gap: 5%;
+}
+
+.button>input {/*input[type="button"]でもOK*/
+    font-size: 200%;
+    border-radius: 10%;
+    background:radial-gradient(rgb(203, 203, 255),rgb(154, 147, 255))
+}
+
+
