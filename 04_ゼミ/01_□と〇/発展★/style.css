@@ -1,0 +1,79 @@
+body {
+    position: relative;
+    background-color: yellow;
+}
+
+h1 {
+    color: green;
+}
+
+#first {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#second {
+    position: absolute;
+    top: 424px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes circle {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1430px);
+    }
+}
+
+@keyframes box {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1430px);
+    }
+}
+
+.square {
+    position: absolute;
+    top: 283px;
+    left: 715px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.rounded {
+    position: absolute;
+    top: 283px;
+    left: 715px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+.transition {
+    transition: all 1s;
+}
+
+#box {
+    position: absolute;
+    top: 566px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 4, 255);
+    animation: box 2s infinite ease alternate-reverse;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    animation: circle 2s infinite ease alternate;
+}
