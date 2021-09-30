@@ -48,7 +48,7 @@ body {
     row-gap: 5%;
 }
 
-.button>input {/*input[type="button"]でもOK*/
+.button>input {/*input[type="button"]でもOK?*/
     font-size: 200%;
     border-radius: 10%;
     background:radial-gradient(rgb(203, 203, 255),rgb(154, 147, 255))

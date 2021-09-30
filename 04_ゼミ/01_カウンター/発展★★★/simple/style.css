@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    margin: 1%;
+    display: flex;
+    background-color: rgb(209, 238, 250);
+}
+
+.left {
+    width: 30%;
+}
+
+.operator {
+    width: 5%;
+}
+
+.operator input {
+    display: block;
+    width: 80%;
+    height: 7%;
+    margin: 0 auto 5% auto;
+}
+
+.center {
+    width: 30%;
+}
+
+.equal {
+    width: 5%;
+}
+
+.equal input {
+    display: block;
+    width: 80%;
+    height: 7%;
+    margin: 120% auto;
+}
+
+.result {
+    width: 30%;
+}
+
+.display {
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    font-size: 300%;
+    text-align: center;
+}
+
+.button {
+    display: grid;
+    height: 60%;
+    grid-template-columns: repeat(3,30%);
+    column-gap: 5%;
+    grid-template-rows: repeat(4,20%);
+    row-gap: 2%;
+    margin-top: 5%;
+}
+
+input[type="button"] {
+    font-size: 200%;
+    cursor: pointer;
+}

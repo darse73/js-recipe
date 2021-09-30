@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+        <div class="left">
+            <input type="text" class="display" id="display-left" value="0" disabled /><!--この最後の　/　のある意味--->
+            <div class="button">
+                <input type="button" value="7" onclick="disLeft(this.value)" />
+                <input type="button" value="8" onclick="disLeft(this.value)" />
+                <input type="button" value="9" onclick="disLeft(this.value)" />
+                <input type="button" value="4" onclick="disLeft(this.value)" />
+                <input type="button" value="5" onclick="disLeft(this.value)" />
+                <input type="button" value="6" onclick="disLeft(this.value)" />
+                <input type="button" value="1" onclick="disLeft(this.value)" />
+                <input type="button" value="2" onclick="disLeft(this.value)" />
+                <input type="button" value="3" onclick="disLeft(this.value)" />
+                <input type="button" value="0" onclick="disLeft(this.value)" />
+                <input type="button" value="." onclick="disLeft(this.value)" />
+                <input type="button" value="DEL" onclick="delLeft()" />
+            </div>
+        </div>
+
+        <div class="operator">
+            <input type="button" value="+" id="plus" onclick="PLUS()" />
+            <input type="button" value="-" id="minus" onclick="MINUS()" />
+            <input type="button" value="×" id="multiplied" onclick="MULTIPLIED()" />
+            <input type="button" value="÷" id="divided" onclick="DIVIDED()" />
+        </div>
+
+        <div class="center">
+            <input type="text" class="display" id="display-center" value="0" disabled />
+            <div class="button">
+                <input type="button" value="7" onclick="disCenter(this.value)" />
+                <input type="button" value="8" onclick="disCenter(this.value)" />
+                <input type="button" value="9" onclick="disCenter(this.value)" />
+                <input type="button" value="4" onclick="disCenter(this.value)" />
+                <input type="button" value="5" onclick="disCenter(this.value)" />
+                <input type="button" value="6" onclick="disCenter(this.value)" />
+                <input type="button" value="1" onclick="disCenter(this.value)" />
+                <input type="button" value="2" onclick="disCenter(this.value)" />
+                <input type="button" value="3" onclick="disCenter(this.value)" />
+                <input type="button" value="0" onclick="disCenter(this.value)" />
+                <input type="button" value="." onclick="disCenter(this.value)" />
+                <input type="button" value="DEL" onclick="delCenter()" />
+            </div>
+        </div>
+        
+
+        <div class="equal">
+            <input type="button" value="=" id="equal" onclick="calc()" />
+        </div>
+        
+        <div class="result">
+            <input type="text" class="display" id="display-right" value="0" disabled />
+        </div>
+           
+
+    <script src="main.js"></script>
+</body>
+</html>
