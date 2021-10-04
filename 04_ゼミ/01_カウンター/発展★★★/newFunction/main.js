@@ -7,6 +7,7 @@ function dis(value) {
     }else{
         displayTop.value += value
     }
+    displayBottom.value = 0
 }
 
 function calc() {
