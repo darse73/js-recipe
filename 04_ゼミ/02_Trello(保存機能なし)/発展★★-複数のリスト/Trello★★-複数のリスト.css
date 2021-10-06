@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html,body {
+    height: 100%;
+    background-color: rgb(195, 209, 250);
+}
+
+.main-container {
+    height: 91%;
+    padding: 2rem 5%;
+    display: flex;
+}
+
+.button {
+    border-radius: 50%;
+    background: radial-gradient(rgb(255, 255, 255),rgb(119, 167, 255));
+    margin-right: 2%;
+    height: 3rem;
+    width: 8%;
+}
+
+.button p{
+    line-height: 3rem;
+    text-align: center;
+}
+
+.list-container {
+    background-color: rgb(104, 150, 236);
+    height: 90%;
+    padding: 2rem 2%;
+    margin-right: 2%;
+}
+
+.cards-container {
+    background-color: rgb(130, 167, 236);
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(165, 190, 236);
+    margin: 1rem 5%;
+    padding: 0 5%;
+    width: 80%;
+    height: 3rem;
+    align-items: center;
+}
+
+.delete {
+    color: red;
+}
+
