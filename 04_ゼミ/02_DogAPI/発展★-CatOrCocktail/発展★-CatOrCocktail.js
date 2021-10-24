@@ -5,6 +5,6 @@ fetch("https://api.thecatapi.com/v1/images/search")
     return res.json()
   })
   .then((data) => {
-    console.log(data)
+    console.dir(data)
     imageElement.src = data[0].url
   })

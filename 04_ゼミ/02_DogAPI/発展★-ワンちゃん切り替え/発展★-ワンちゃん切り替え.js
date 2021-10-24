@@ -11,5 +11,5 @@ const update = function() {
     })
 }
 
-window.onload = update()
-button.onclick = update()
+window.onload = update
+button.onclick = update

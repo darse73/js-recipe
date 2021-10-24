@@ -1,17 +1,30 @@
 const image = document.getElementById("image")
 const button = document.getElementById("button")
+const selector = document.getElementById("selector")
 
-const update = function() {
-    const selector = document.getElementById("selector")
-
-    fetch(`https://dog.ceo/api/breed/${selector.value}/images/random`)
+const createOption = function() {
+    fetch(`https://dog.ceo/api/breeds/list/all`)
     .then((res) => {
         return res.json()
     })
     .then((data) => {
-        image.src = data.message
-    })
+        console.dir(data)
+            fetch(`https://dog.ceo/api/breed/${}/list`)
+            .then((res) => {
+                return res.json()
+            })
+            .then((data2) => {
+                console.dir(data2)
+                //もしサブ犬種がないならば～
+                if(1+1 === 2){
+                    console.log(element)
+                    }
+                }
+            )
+                
+        })
 }
 
-update()
-button.onclick = update
+        
+
+createOption()
