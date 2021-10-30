@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div id="ATM">
+      <h2>入力画面</h2>
+      <input type="number" v-model="inputAmount" v-on:input="checkMethod">
+      <p>
+        入力額： {{ inputAmount }}円
+      </p>
+      <button v-on:click="deposit" >入金</button>
+      <button v-on:click="withdrawal" v-bind:disabled="check">出金</button>
+      <h2>残高</h2>
+      <p>{{ balance }}</p>
+      <h2>取引記録</h2>
+      <div v-for="log in logs">
+          日付：{{ log.date }}<br>
+          操作：{{ log.type }}<br>
+          金額：{{ log.money }}<br>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
